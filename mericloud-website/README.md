@@ -1,6 +1,6 @@
-# MeriCloud website
+# Mericloud website
 
-Marketing site for MeriCloud, a software and systems engineering company.
+Marketing site for Mericloud, a software and systems engineering company.
 
 ## What is here
 
@@ -24,7 +24,7 @@ The site needs internet access only for Google Fonts.
 ## Notes
 
 - Colours follow the visitor browser setting (light or dark). There is no theme toggle.
-- The contact form and the newsletter button open an email to hello@meridian.tech in the visitor mail app. Connect a form or mailing service before launch. If the company email domain changes with the new name, update it in site/index.template.html.
+- The contact form and the newsletter button open an email to hello@mericloud.tech in the visitor mail app. Connect a form or mailing service before launch. If the company email domain changes with the new name, update it in site/index.template.html.
 - The cookie banner stores the visitor choice in local storage. It does not set analytics cookies yet.
 - Legal technology and the two prototype products use a generic office photo. Replace it with real screenshots when available.
 - Service lists, process stages and FAQ answers are drafted wording. Check them against what the company actually offers before launch.

@@ -1,0 +1,25 @@
+{
+  "builds": {
+    "/.*": ["vite build"]
+  },
+  "functions": {
+    "/api/*": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": {
+    "/(.*)": "site/index.template.html",
+    "/api/(.*)": "api/$1"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
