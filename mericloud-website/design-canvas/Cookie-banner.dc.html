@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MeriCloud — Cookie banner</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:var(--pr)}
+@keyframes grow{0%{transform:scaleX(0)}55%,100%{transform:scaleX(1)}}
+@keyframes rise{0%{transform:scaleY(.15)}55%,100%{transform:scaleY(1)}}
+@keyframes sign{0%{stroke-dashoffset:240}60%,100%{stroke-dashoffset:0}}
+@keyframes pulse{50%{opacity:.4}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.g{transform-box:fill-box;transform-origin:left center;animation:grow 4s ease-out infinite alternate}
+.r{transform-box:fill-box;transform-origin:center bottom;animation:rise 4s ease-out infinite alternate}
+.sig{stroke-dasharray:240;animation:sign 4s ease-in-out infinite alternate}
+.pl{animation:pulse 2.4s ease-in-out infinite}
+.bl{transform-box:fill-box;transform-origin:center;animation:blink 4s infinite}
+.dr{animation:drift 5s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</helmet>
+<div style="font-family:Inter,sans-serif;--bg:#F4F8FD;--sf:#FFFFFF;--tx:#12274B;--mu:#4A5F82;--ln:#D5E1F2;--pr:#1472DC;--ac:#F08A24;--ib:#E6EEF9;--nv:#12274B;color:var(--tx);background:var(--bg);width:100%;min-height:600px"><header style="display:flex;align-items:center;justify-content:space-between;padding:18px 56px;background:var(--sf);border-bottom:1px solid var(--ln)"><a href="#" style="display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;letter-spacing:.14em;color:var(--pr)"><svg width="30" height="26" viewBox="0 0 30 26" aria-hidden="true"><path d="M3 24V3l12 13" fill="none" stroke="#0B3FA3" stroke-width="5" stroke-linejoin="round"/><path d="M27 24V3L15 16" fill="none" stroke="#18B4E8" stroke-width="5" stroke-linejoin="round"/></svg>MERICLOUD</a><nav style="display:flex;gap:34px"><a href="#" style="font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent">Services</a><a href="#" style="font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent">Products</a><a href="#" style="font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent">Work</a><a href="#" style="font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent">Process</a><a href="#" style="font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent">About</a><a href="#" style="font-size:15px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent">Insights</a></nav><span style="display:flex;gap:14px;align-items:center"><a href="#" style="border:2px solid var(--pr);color:var(--pr);font-size:14px;font-weight:600;padding:9px 20px;border-radius:24px">Contact us</a></span></header><section style="position:relative;height:620px;background:linear-gradient(90deg,rgba(14,31,61,.88) 0%,rgba(14,31,61,.55) 50%,rgba(14,31,61,.05) 100%),url(/_blob/ca5059ef4127666109f57fe3f3a4898b) center 40%/cover;display:flex;align-items:flex-end;padding:0 56px 140px;color:#fff"><div style="max-width:700px"><h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;margin:0;font-size:58px;line-height:1.04">The systems that keep your business moving.</h1></div><div style="position:absolute;left:20px;right:20px;bottom:20px;background:var(--nv);border-radius:12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 14px 40px rgba(0,0,0,.35)"><p style="margin:0;font-size:14px;line-height:1.5;max-width:760px;color:#DCE6F6">We use essential cookies to make this site work. With your permission we would also like to use analytics cookies to understand how it is used. You can change your choice at any time by clearing this site's data.</p><div style="display:flex;gap:10px"><a href="#" style="background:#F08A24;color:#12274B;padding:12px 24px;border-radius:28px;font-weight:700;font-size:15px">Accept all</a><a href="#" style="border:2px solid #fff;color:#fff;padding:10px 22px;border-radius:28px;font-weight:600;font-size:15px">Essential only</a></div></div></section></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":700}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

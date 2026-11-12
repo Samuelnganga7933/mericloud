@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MeriCloud — Admin</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}a:hover{color:var(--pr)}
+@keyframes grow{0%{transform:scaleX(0)}55%,100%{transform:scaleX(1)}}
+@keyframes rise{0%{transform:scaleY(.15)}55%,100%{transform:scaleY(1)}}
+@keyframes sign{0%{stroke-dashoffset:240}60%,100%{stroke-dashoffset:0}}
+@keyframes pulse{50%{opacity:.4}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.g{transform-box:fill-box;transform-origin:left center;animation:grow 4s ease-out infinite alternate}
+.r{transform-box:fill-box;transform-origin:center bottom;animation:rise 4s ease-out infinite alternate}
+.sig{stroke-dasharray:240;animation:sign 4s ease-in-out infinite alternate}
+.pl{animation:pulse 2.4s ease-in-out infinite}
+.bl{transform-box:fill-box;transform-origin:center;animation:blink 4s infinite}
+.dr{animation:drift 5s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</helmet>
+<div style="font-family:Inter,sans-serif;--bg:#F4F8FD;--sf:#FFFFFF;--tx:#12274B;--mu:#4A5F82;--ln:#D5E1F2;--pr:#1472DC;--ac:#F08A24;--ib:#E6EEF9;--nv:#12274B;color:var(--tx);background:var(--bg);width:100%;min-height:600px"><div style="display:grid;grid-template-columns:1fr 1fr;min-height:900px"><div style="display:flex;align-items:center;justify-content:center;background:var(--sf)"><div style="width:340px"><div style="display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.14em;color:var(--pr);margin-bottom:26px"><svg width="30" height="26" viewBox="0 0 30 26" aria-hidden="true"><path d="M3 24V3l12 13" fill="none" stroke="#0B3FA3" stroke-width="5" stroke-linejoin="round"/><path d="M27 24V3L15 16" fill="none" stroke="#18B4E8" stroke-width="5" stroke-linejoin="round"/></svg>MERICLOUD ADMIN</div><h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;margin:0;font-size:34px;margin-bottom:6px">Sign in</h1><p style="color:var(--mu);font-size:14px;margin:0 0 22px">Protected area. Staff only. Two-factor required.</p><div style="margin-bottom:16px"><div style="font-size:13px;font-weight:600;margin-bottom:6px">Email</div><div style="height:44px;border:1px solid var(--ln);border-radius:8px;background:var(--sf)"></div></div><div style="margin-bottom:16px"><div style="font-size:13px;font-weight:600;margin-bottom:6px">Password</div><div style="height:44px;border:1px solid var(--ln);border-radius:8px;background:var(--sf)"></div></div><a href="#" style="display:inline-block;background:var(--pr);color:#fff;padding:13px 24px;border-radius:28px;font-weight:600;font-size:15px">Sign in</a></div></div><div style="background:var(--nv);padding:36px;color:#fff"><div style="font-size:13px;letter-spacing:.2em;color:#F5B27A;font-weight:700;margin-bottom:20px">CONTENT MANAGEMENT</div><div style="display:grid;grid-template-columns:200px 1fr;gap:24px"><div><div style="padding:12px 18px;font-size:15px;background:rgba(255,255,255,.12);border-radius:6px;font-weight:600">Overview</div><div style="padding:12px 18px;font-size:15px;color:#B8C7E4">Services</div><div style="padding:12px 18px;font-size:15px;color:#B8C7E4">Products</div><div style="padding:12px 18px;font-size:15px;color:#B8C7E4">Work</div><div style="padding:12px 18px;font-size:15px;color:#B8C7E4">Insights</div><div style="padding:12px 18px;font-size:15px;color:#B8C7E4">Enquiries</div><div style="padding:12px 18px;font-size:15px;color:#B8C7E4">Settings</div></div><div style="background:rgba(255,255,255,.07);border-radius:10px;padding:22px"><b>Enquiries</b><div style="margin-top:14px;font-size:14px;color:#B8C7E4">No enquiries yet.</div><hr style="border:0;border-top:1px solid rgba(255,255,255,.15);margin:18px 0"><b>Insights</b><div style="margin-top:14px;font-size:14px;color:#B8C7E4">No drafts. Publishing is a deliberate step.</div></div></div></div></div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
