@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0A1630"/>
-  <path d="M14 48V16l18 20" fill="none" stroke="#0B3FA3" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M50 48V16L32 36" fill="none" stroke="#18B4E8" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <style>
+    .m-left{stroke:#0B3FA3}
+    .m-right{stroke:#18B4E8}
+    @media (prefers-color-scheme: dark){
+      .m-left{stroke:#8AB8FF}
+      .m-right{stroke:#3FD5FF}
+    }
+  </style>
+  <g fill="none" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path class="m-left" d="M14 48V16l18 20"/>
+    <path class="m-right" d="M50 48V16L32 36"/>
+  </g>
 </svg>
