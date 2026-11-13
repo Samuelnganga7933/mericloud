@@ -1,30 +1,40 @@
-# Mericloud website
+# MeriCloud website
 
-Marketing site for Mericloud, a software and systems engineering company.
+Marketing site for MeriCloud, a software and systems engineering company.
 
-## What is here
+## Structure
 
 | Path | Purpose |
 |---|---|
-| `site/index.template.html` | The whole interactive site as one readable HTML file. Images are inserted at build time. |
-| `assets/` | Photography and screenshots used by the site. |
-| `build.py` | Embeds the images and writes `dist/index.html`, a single file you can host anywhere. |
-| `design-canvas/` | Claude Design artboards for every page (static layouts) and `canvas.json`. |
-| `docs/brief.md` | Summary of the design and content brief. |
+| `index.html` | Site entry point and page shell. |
+| `404.html` | Not-found page. |
+| `error.html` | Legacy error URL that redirects to `404.html`. |
+| `assets/css/site.css` | Site styles, including light and dark themes. |
+| `assets/js/site.js` | Page content, navigation and form handling. |
+| `assets/images/` | Photography used throughout the site. |
+| `assets/favicons/` | Favicons and the Apple touch icon. |
 
-## Build and preview
+The site is plain static HTML, CSS and JavaScript. There is no build step.
 
-```bash
-python3 build.py
-open dist/index.html   # or serve the dist/ folder with any static host
+## Deployment
+
+The site is hosted on Vercel from this repository root. Pushing to `main` deploys the files above. `index.html`, `404.html` and `assets/` must stay at the root.
+
+## Forms
+
+The contact and newsletter forms submit directly to Formspree with AJAX; no email app is opened. The endpoint is defined once in `assets/js/site.js`:
+
+```js
+const FORMSPREE_ENDPOINT="https://formspree.io/f/mkjrgpya";
 ```
 
-The site needs internet access only for Google Fonts.
+To use a different Formspree project, replace that value. Contact submissions include the fields `name`, `email`, `phone`, `organisation`, `topic`, `message`, `budget`, `timeline` and `contact_preference`. Newsletter submissions include `email` and the hidden `form=newsletter` field. Both include a `_subject` value so the two form types are easy to tell apart in Formspree.
+
+The company email address is `hello@mericloud.tech`. Keep it consistent anywhere it appears. It is only used for direct contact links; form submissions do not use `mailto:`.
 
 ## Notes
 
 - Colours follow the visitor browser setting (light or dark). There is no theme toggle.
-- The contact form and the newsletter button open an email to hello@mericloud.tech in the visitor mail app. Connect a form or mailing service before launch. If the company email domain changes with the new name, update it in site/index.template.html.
 - The cookie banner stores the visitor choice in local storage. It does not set analytics cookies yet.
 - Legal technology and the two prototype products use a generic office photo. Replace it with real screenshots when available.
 - Service lists, process stages and FAQ answers are drafted wording. Check them against what the company actually offers before launch.
