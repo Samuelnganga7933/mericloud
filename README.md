@@ -13,6 +13,7 @@ Marketing site for MeriCloud, a software and systems engineering company.
 | `assets/js/site.js` | Page content, navigation and form handling. |
 | `assets/images/` | Photography used throughout the site. |
 | `assets/favicons/` | Favicons and the Apple touch icon. |
+| `favicon.ico`, `favicon.svg` | Root copies browsers request by convention. |
 
 The site is plain static HTML, CSS and JavaScript. There is no build step.
 
